@@ -20,4 +20,3 @@ ChalkBotX is an intelligent chatbot designed to assist students with their acade
 
 4. **Instant Replies:** The chatbot provides instant replies with answers, explanations, or suggestions based on the uploaded materials.
 
-[Click Here to view the chatbot] (http://localhost:8000/)
