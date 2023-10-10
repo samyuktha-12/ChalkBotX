@@ -1,0 +1,16 @@
+langchain
+openai
+chainlit
+chromadb
+tiktoken
+PyPDF2
+pypdf
+pandas
+tabulate
+pytesseract
+pdf2image
+opencv-python
+python-pptx
+PyMuPDF
+Pillow
+requests
