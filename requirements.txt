@@ -14,3 +14,7 @@ python-pptx
 PyMuPDF
 Pillow
 requests
+ctransformers
+huggingface-hub
+sentence-transformers
+faiss-cpu
