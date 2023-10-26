@@ -116,7 +116,7 @@ async def setup_agent(settings):
     # Create Embeddings
     emb=embeddings.select_embeddings(embed)
     if embed=='Open AI Embeddings':
-        docsearch = await cl.make_async(Chroma.from_texts)(texts, emb, metadatas=metadatas)
+        docsearch = await cl.make_async(Chroma.from_texts)(texts, emb, metadatas=metadatas,persist_directory=parameters.CHROMA_PATH)
     else:
         docsearch = await cl.make_async(FAISS.from_texts)(texts, emb, metadatas=metadatas)
         docsearch.save_local(parameters.DB_FAISS_PATH)
