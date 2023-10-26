@@ -116,7 +116,7 @@ async def setup_agent(settings):
     # Create Embeddings
     emb=embeddings.select_embeddings(embed)
     if embed=='Open AI Embeddings':
-        docsearch = await cl.make_async(Chroma.from_texts)(texts, emb, metadatas=metadatas, persist=parameters.CHROMA_PATH)
+        docsearch = await cl.make_async(Chroma.from_texts)(texts, emb, metadatas=metadatas)
     else:
         docsearch = await cl.make_async(FAISS.from_texts)(texts, emb, metadatas=metadatas)
         docsearch.save_local(parameters.DB_FAISS_PATH)
@@ -147,16 +147,15 @@ async def setup_agent(settings):
 @cl.on_message
 async def main(message:str):
  
-    message=""
     chain = cl.user_session.get("chain")  
     cb = cl.AsyncLangchainCallbackHandler(
         stream_final_answer=True, answer_prefix_tokens=["FINAL", "ANSWER"]
     )
     cb.answer_reached = True
-    res = await chain.acall(message, callbacks=[cb])
+    res = await chain.acall(message.content, callbacks=[cb])
     print(res)
     answer = res["answer"]
-    sources=False
+    sources = res["sources"].strip()
     source_elements = []
 
     # Get the metadata and texts from the user session
