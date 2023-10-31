@@ -22,7 +22,7 @@ ChalkBotX is an intelligent chatbot designed to assist students with their acade
 
 ## Steps to Replicate 
 
-1. Fork this repository and create a codespace in GitHub as I showed you in the youtube video OR Clone it locally.
+1. Clone the repository locally.
 ```
 git clone https://github.com/samyuktha-12/ChalkBotX
 cd ChalkBotX
