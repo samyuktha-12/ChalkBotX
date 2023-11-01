@@ -48,5 +48,11 @@ cd ChalkBotX
    ```
    chainlit run app.py
    ```
+   You will be redirected to the web browser.
+
+6. Use the following command to deactivate the environment
+   ```
+   conda deactivate
+   ```
 ---
 
