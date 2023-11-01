@@ -33,7 +33,7 @@ cd ChalkBotX
    OPENAI_API_KEY=your_openai_api_key
    ```
 
-3. Create a virtualenv and activate it
+3. Create a virtualenv and activate it using anaconda, if not present install it.
   
    ```
    conda create -n .venv python=3.11 -y && source activate .venv
