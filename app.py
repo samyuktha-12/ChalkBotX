@@ -54,7 +54,7 @@ async def start():
                 label="Temperature",
                 initial=0,
                 min=0,
-                max=2,
+                max=1,
                 step=0.1,
             ),
             TextInput(id="chunk_size", label="Enter Chunk Size", initial="1000"),
