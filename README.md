@@ -36,7 +36,7 @@ cd ChalkBotX
 3. Create a virtualenv and activate it using anaconda, if not present install it.
   
    ```
-   conda create -n .venv python=3.11 -y && source activate .venv
+   conda create -n .venv python=3.11 -y && conda activate .venv
    ```
 
 4. Run the following command in the terminal to install necessary python packages:
