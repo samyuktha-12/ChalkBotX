@@ -1,6 +1,7 @@
 # ChalkBotX - A Smart Chatbot for Student Queries
 
 ChalkBotX is an intelligent chatbot designed to assist students with their academic queries. It allows students to ask questions by uploading PowerPoint presentations (PPT), PDF files, images, or scanned books, and the chatbot will provide relevant answers.
+This Project has been published as a Research Paper. [Click Here to View](https://journals.stmjournals.com/jotea/article=2024/view=145756/)
 
 ## Team Members
 
